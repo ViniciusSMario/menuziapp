@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    volumes:
+      - .:/var/www:cached
+      - ./docker/php/conf.d/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      CACHE_DRIVER: file
+
+  nginx:
+    volumes:
+      - .:/var/www:cached
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d

@@ -1,0 +1,309 @@
+:root {
+    --main-color: #f12727;
+}
+
+.btn-main {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    color: #fff;
+}
+
+.btn-main:hover {
+    background-color: #fff !important;
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.text-main {
+    color: var(--main-color) !important;
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../fonts/Inter-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Exemplo de uso */
+.text-signature {
+    font-family: 'AuthenticSignature', cursive;
+    /* font-size: 2rem; */
+}
+
+.text-signature-title {
+    font-family: 'AuthenticSignature', cursive;
+    font-size: 5rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.bg-primary {
+    background-color: #f12727 !important;
+}
+
+.btn-yellow-custom {
+    background-color: #ffc828 !important;
+}
+
+.btn-primary {
+    background-color: #f12727 !important;
+}
+
+.bg-maroon {
+    background-color: #4a011e !important;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero .btn {
+    font-size: 1.5rem;
+    padding: 12px 30px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F9C349 !important;
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar .badge {
+    font-size: 0.75rem;
+}
+
+.text-maroon {
+    color: #4a011e;
+}
+
+.text-yellow {
+    color: #F9C349;
+}
+
+.btn-maroon {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.btn-maroon:hover {
+    background-color: #F9C349;
+    color: #FFF;
+}
+
+.carousel img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-btn-comprar {
+    letter-spacing: 5px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-body p {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 2.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-facebook {
+    color: #F9C349;
+}
+
+.text-instagram {
+    color: #F9C349;
+}
+
+.text-whatsapp {
+    color: #F9C349;
+}
+
+.text-facebook:hover {
+    color: #1877f2;
+}
+
+.text-instagram:hover {
+    color: #c13584;
+}
+
+.text-whatsapp:hover {
+    color: #25d366;
+}
+
+#depoimentos .card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #fff, #f8f9fa);
+}
+
+#depoimentos .carousel-control-prev-icon,
+#depoimentos .carousel-control-next-icon {
+    background-color: #8B0000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Evita a barra branca lateral em dispositivos menores */
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+/* Ajusta o botão para não ultrapassar a tela */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* ou right: 10px se quiser do lado direito */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 999;
+    /* Mantém acima de outros elementos */
+}
+
+.whatsapp-float {
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* Diminui o botão em telas menores */
+@media (max-width: 576px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    position: absolute;
+    right: 70px;
+    /* Posicionado ao lado direito do botão */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    white-space: nowrap;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Exibe o tooltip ao passar o mouse */
+.whatsapp-container:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(5px);
+}
+
+#floating-cart {
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#floating-cart .btn {
+    font-size: 1.5rem;
+}
+
+.bg-login-image {
+    background: url("https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-login_114360-739.jpg?t=st=1741992134~exp=1741995734~hmac=3fc029fa85671873e701c23f93a0f90ecf03c27a660c6471031d725c29acaca9&w=740");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-wrapper {
+    margin-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .content-wrapper {
+        margin-top: 30px;
+    }
+}
+
+/* Scroll suave e escondendo a barra em alguns navegadores */
+.container .overflow-auto::-webkit-scrollbar {
+    display: none;
+}
+.container .overflow-auto {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-img-top.object-fit-cover {
+    object-fit: cover;
+    border: 3px solid #eee;
+}
